@@ -6,8 +6,8 @@
 
 ## 使用说明
 
-1. 只需要下载netEase.py和temp.py  
-2. 登陆上你的mysql,在终端输入:   
+- 只需要下载netEase.py和temp.py  
+- 登陆上你的mysql,在终端输入:   
 ```
 mysql -uroot -p(here is your password)
 ```
@@ -15,15 +15,15 @@ mysql -uroot -p(here is your password)
 ```
 CREATE DATABASE netEase;
 ```
-3. 运行temp.py前请修改如下几处：
- - line6: mysql本地账号密码
-4. cd到temp.py目录下运行`./temp.py`(可能需要先`chmod +x temp.py`一下)  
-5. 运行netEase.py前请修改如下几处：  
- - line24-26: 邮件的发送者和接收者
- - line28: mysql本地账号密码  
- - line172: 初始爬取账号(uid) 
- - line56,137: 爬取用户数目(当前值为20)  
-6. 接着在netEase.py下输入`./netEase.py`即可运行爬虫  
+- 运行temp.py前请修改如下几处：
+	- line6: mysql本地账号密码
+- cd到temp.py目录下运行`./temp.py`(可能需要先`chmod +x temp.py`一下)  
+- 运行netEase.py前请修改如下几处：  
+	- line24-26: 邮件的发送者和接收者
+	- line28: mysql本地账号密码  
+	- line172: 初始爬取账号(uid) 
+	- line56,137: 爬取用户数目(当前值为20)  
+- 接着在netEase.py下输入`./netEase.py`即可运行爬虫  
 
 ## 运行结果  
 
@@ -42,3 +42,4 @@ CREATE DATABASE netEase;
 2. 增加多线程以加快爬取速度
 3. 增加注释  
 4. 增加实现说明  
+5. 爬取用户分析表
